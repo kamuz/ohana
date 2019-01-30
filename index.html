@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Ohana</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body class="index">
+    <div class="sidenav">
+        <ul>
+            <li class="uk-active"><a href="https://roddyr2.github.io/OhanaHTML/"><i class="uk-icon-home uk-icon-medium"></i> Home</a></li>
+            <li><a href="users.html"><i class="uk-icon-users uk-icon-medium"></i> Users</a></li>
+            <li><a href="users.html"><i class="uk-icon-book uk-icon-medium"></i> History</a></li>
+            <li><a href="users.html"><i class="uk-icon-dollar uk-icon-medium"></i> Sales</a></li>
+            <li><a href="users.html"><i class="uk-icon-bullhorn uk-icon-medium"></i> Service</a></li>
+            <li><a href="users.html"><i class="uk-icon-bolt uk-icon-medium"></i> Lightning</a></li>
+            <li><a href="settings.html"><i class="uk-icon-gear uk-icon-medium"></i> Settings</a></li>
+        </ul>
+    </div>
+    <nav class="uk-navbar">
+        <a class="uk-navbar-brand" href="https://roddyr2.github.io/OhanaHTML/">Ohana</a>
+            <div class="uk-navbar-content">
+                <form class="uk-search">
+                    <input class="uk-search-field" type="search" placeholder="Search...">
+                </form>
+            </div>
+        <div class="uk-navbar-flip">
+            <ul class="uk-navbar-nav">
+                <li><a href="profile.html"><span class="uk-hidden-small">Hi, Jeremy</span><img src="img/jeremy.jpg" alt="Jeremy"></a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="content">
+        <div class="uk-grid">
+            <div class="uk-width-1-1">
+                <div class="uk-panel uk-panel-box">
+                    <div class="uk-grid uk-grid-large statistic">
+                        <div class="uk-width-large-1-4 uk-width-medium-1-2 uk-width-small-1-1 item">
+                            <div class="text">Total no. of users</div>
+                            <div class="number">2,012</div>
+                        </div>
+                        <div class="uk-width-large-1-4 uk-width-medium-1-2 uk-width-small-1-1 item">
+                            <div class="text">Monthly active users</div>
+                            <div class="number">1623 <sup class="uk-text-success">+2%</sup></div>
+                        </div>
+                        <div class="uk-width-large-1-4 uk-width-medium-1-2 uk-width-small-1-1 item">
+                            <div class="text">Daily active users</div>
+                            <div class="number">472 <sup class="uk-text-danger">-5%</sup></div>
+                        </div>
+                        <div class="uk-width-large-1-4 uk-width-medium-1-2 uk-width-small-1-1 filter">
+                            <div class="text">Time period</div>
+                            <div class="uk-button uk-form-select" data-uk-form-select>
+                                <span></span>
+                                <i class="uk-icon-caret-down"></i>
+                                <select>
+                                    <option value="">This week</option>
+                                    <option value="1">Option 01</option>
+                                    <option value="2">Option 02</option>
+                                    <option value="3">Option 03</option>
+                                    <option value="4">Option 04</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="uk-grid">
+            <div class="uk-width-large-1-3 ul-width-medium-1-1">
+                <div class="uk-panel uk-panel-box">
+                    <h3 class="uk-panel-title">Logins</h3>
+                    <canvas id="a-chart" width="400" height="200"></canvas>
+                </div>
+            </div>
+            <div class="uk-width-large-1-3 ul-width-medium-1-1">
+                <div class="uk-panel uk-panel-box">
+                    <h3 class="uk-panel-title"># of Downloads</h3>
+                    <canvas id="b-chart" width="400" height="200"></canvas>
+                </div>
+            </div>
+            <div class="uk-width-large-1-3 ul-width-medium-1-1">
+                <div class="uk-panel uk-panel-box">
+                    <h3 class="uk-panel-title"># of Reports Run</h3>
+                    <canvas id="c-chart" width="400" height="200"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="uk-grid">
+            <div class="uk-width-large-1-3 ul-width-medium-1-1">
+                <div class="uk-panel uk-panel-box">
+                    <h3 class="uk-panel-title">Most Popular Chatter Topics</h3>
+                    <canvas id="d-chart" width="400" height="200"></canvas>
+                </div>
+            </div>
+            <div class="uk-width-large-1-3 ul-width-medium-1-1">
+                <div class="uk-panel uk-panel-box">
+                    <h3 class="uk-panel-title"># of Support Cases</h3>
+                    <canvas id="e-chart" width="400" height="200"></canvas>
+                </div>
+            </div>
+            <div class="uk-width-large-1-3 ul-width-medium-1-1">
+                <div class="uk-panel uk-panel-box">
+                    <h3 class="uk-panel-title">Users (by Persona)</h3>
+                    <canvas id="f-chart" width="400" height="200"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="uk-grid">
+            <div class="uk-width-1-1">
+                <div class="uk-panel uk-panel-box fullwidth-content">
+                    <h3 class="uk-panel-title"><img src="img/crown.svg" alt="Crown">Top 10 Active Users</h3>
+                    <div class="uk-overflow-container">
+                        <table class="uk-table uk-table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Last Login Date</th>
+                                    <th>Profile</th>
+                                    <th>Role</th>
+                                    <th>User Adoption Score</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><img src="img/amstrong.jpg" alt="Jeremy Armstrong"> Jeremy Armstrong</td>
+                                    <td>06/07/2018</td>
+                                    <td>VP of Service</td>
+                                    <td>Service</td>
+                                    <td>91</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/teresa.jpg" alt="Teresa Simmons"> Teresa Simmons</td>
+                                    <td>12/07/2018</td>
+                                    <td>CEO</td>
+                                    <td>Service</td>
+                                    <td>88</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/joe.jpg" alt="Joe Jenkins"> Joe Jenkins</td>
+                                    <td>01/07/2018</td>
+                                    <td>Director Sales</td>
+                                    <td>Sales</td>
+                                    <td>82</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/jeffrey.jpg" alt="Jeffrey Johnston"> Jeffrey Johnston</td>
+                                    <td>06/07/2018</td>
+                                    <td>Sales Rep</td>
+                                    <td>Sales</td>
+                                    <td>76</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/ronald.jpg" alt="Ronald Banks"> Ronald Banks</td>
+                                    <td>03/12/2018</td>
+                                    <td>VP of Service</td>
+                                    <td>Sales</td>
+                                    <td>72</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/jose.jpg" alt="Jose Butler"> Jose Butler</td>
+                                    <td>06/07/2018</td>
+                                    <td>CEO</td>
+                                    <td>Sales</td>
+                                    <td>69</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/megan.jpg" alt="Megan Holmes"> Megan Holmes</td>
+                                    <td>01/24/2018</td>
+                                    <td>Director Sales</td>
+                                    <td>Sales</td>
+                                    <td>62</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/hannah.jpg" alt="Hannah Vasquez"> Hannah Vasquez</td>
+                                    <td>03/12/2018</td>
+                                    <td>Sales Rep</td>
+                                    <td>Service</td>
+                                    <td>61</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/anthony.jpg" alt="Anthony Hudson"> Anthony Hudson</td>
+                                    <td>03/09/2018</td>
+                                    <td>VP of Service</td>
+                                    <td>Sales</td>
+                                    <td>56</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/harold.jpg" alt="Harold Lucas"> Harold Lucas</td>
+                                    <td>04/08/2018</td>
+                                    <td>CEO</td>
+                                    <td>Service</td>
+                                    <td>52</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="js/main.min.js"></script>
+</body>
+</html>
